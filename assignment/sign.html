@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Sign Up</title>
+        <!-- Form Validation -->
+        <script src="js/formValidation.js"></script>
+
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/teaicon.ico" />
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html">TeaSavvy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+						            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+					            	<li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sign.html">Sign Up</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+           <div class="row gx-5 gx-lg-4">
+             <div class="col-lg-4 mb-5 mt-5"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/tea1.jpg" alt="Tea Field"/></div>
+              <div class="col-lg-7 mb-5 mt-5 ">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h2 class="card-title">Sign Up:</h2>
+
+          <form name="sign" method="post" action="#" onsubmit="return validateForm(this);">
+
+                <label><b><h5>First Name:</h5></b></label>  
+                <input type="text" name="firstName" value="" />
+                <span id="error1"></span>
+
+                   <br />
+                   <br />
+
+                <label><b><h5>Last Name:</h5></b></label>  
+                <input type="text" name="lastName" value="" />
+                <span id="error2"></span>
+            
+                    
+                  <br />
+                  <br />
+
+                <label><b><h5>Email:</h5></b></label>
+                <input type="text" name="email" value=""/>
+                <span id="error3"></span>
+                  <br />
+                  <br />
+
+              
+               <label><b><h5>Country:</h5></b></label>
+                <select name="country">
+                  <option value="">Select Country</option>
+                  <option value="TT">Trinidad & Tobago</option>
+                  </select>
+                <span id="error4"></span>
+
+              <br />
+              <br />
+
+              <label><b><h5>Gender:</h5></b></label>
+              Male<input type="radio" name="gender" value="male" />
+              Female<input type="radio" name="gender" value="female" />
+              <span id="error5"></span>
+               <br />
+               <br />
+
+              <label><b><h5>Tea Preference:</h5></b></label>
+              Floral<input type="checkbox" name="teaPref[]" value="Floral" />
+              Citrus<input type="checkbox" name="teaPref[]" value="Citrus" />
+              Minty<input type="checkbox" name="teaPref[]" value="Minty" />
+              <span id="error6"></span>
+
+              <br />
+              <br />
+
+            
+            <div>  
+             <input type="submit" class="btn btn-primary btn-sm px-3" name="submit" value="Submit" />
+              <input type="reset" class="btn btn-primary btn-sm px-3" name="reset" value="Reset" />
+            </div>
+          
+            <br />
+            <br />
+          
+          </form>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    
+
+          <!-- Footer-->
+          <footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; TeaSavvy 2021</p></div>
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white"><a href="contact.html">Contact Us</a></p></div>
+
+          <!-- Social Media Icons -->
+          <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">
+            <a href="https://www.facebook.com/" class="icon-block">
+            <i class="icon-home icon-4x"></i>
+            <img src="assets/fb.ico">
+          </a>
+          <a href="https://www.instagram.com/" class="icon-block">
+            <i class="icon-th icon-4x"></i>
+            <img src="assets/ig.ico">
+          </a>
+          <a href="https://twitter.com/?lang=en" class="icon-block">
+            <i class="icon-cog icon-4x"></i>
+            <img src="assets/twitter.ico">
+          </a>
+
+          </p>  
+          </div>   
+          </footer>
+          </footer>
+            </div>
+        </div>
